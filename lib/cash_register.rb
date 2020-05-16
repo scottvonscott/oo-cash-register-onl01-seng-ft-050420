@@ -10,6 +10,8 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1 )
+    line_qty = []
+    @line_qty = line_qty
     line_items = []
     @line_items = line_items
     @line_items << price
