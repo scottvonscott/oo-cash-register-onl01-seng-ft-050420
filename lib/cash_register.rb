@@ -29,10 +29,11 @@ class CashRegister
   end
 
   def items
-    @items
+    @items.pop(@title)
    end
 
   def void_last_transaction
+    @
   end
 
 
