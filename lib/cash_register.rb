@@ -13,7 +13,6 @@ class CashRegister
     @price = price
     line_items = Array.new
     line_items << @price
-    binding.pry
     @total = @total + price * quantity
     @title = title
     @items = @items.fill(@title, @items.size, quantity)
@@ -38,6 +37,7 @@ class CashRegister
 
   def void_last_transaction
     @items.delete(-1)
+    @total = @total - line_items[-1]
 
   end
 
