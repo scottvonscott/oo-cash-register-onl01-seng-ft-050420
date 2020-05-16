@@ -33,7 +33,7 @@ class CashRegister
    end
 
   def void_last_transaction
-    @items.pop()
+    @items.delete(-1)
     binding.pry
     @total = @total
   end
