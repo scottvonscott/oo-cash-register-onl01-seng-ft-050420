@@ -36,8 +36,7 @@ class CashRegister
    end
 
   def void_last_transaction
-
-    @total = @total - @line_items.join()
+@line_items.join()
     binding.pry
 
   end
