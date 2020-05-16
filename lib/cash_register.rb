@@ -39,7 +39,7 @@ class CashRegister
     @line_items
     binding.pry
 
-    @total = @total - line_items[-1]
+    @total = @total - @line_items
   end
 
 
