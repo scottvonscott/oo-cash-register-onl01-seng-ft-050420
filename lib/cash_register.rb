@@ -41,6 +41,7 @@ class CashRegister
   def void_last_transaction
     last_item = @line_items.join().to_f
     @total = @total - last_item
+    @line_qty
   end
 
 
