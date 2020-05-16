@@ -13,13 +13,6 @@ class CashRegister
     @total = @total + price * quantity
     @title = title
     @items = @items.fill(@title, @items.size, quantity)
-
-
-    # @items = @items << @title * quantity
-
-    # @items = quantity.times do
-    #   @items << @title
-    # end
   end
 
 
