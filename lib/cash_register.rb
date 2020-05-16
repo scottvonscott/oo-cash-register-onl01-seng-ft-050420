@@ -14,7 +14,7 @@ class CashRegister
     @line_qty = line_qty
     @line_qty << quantity
     line_price = []
-    @line_price = line_items
+    @line_price = line_price
     @line_price << price
     @total = @total + price * quantity
     @title = title
