@@ -10,9 +10,9 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1 )
-    @price = price
-    line_items = Array.new
-    line_items << @price
+    line_items = []
+    @line_items = line_items
+    @line_items << price
     @total = @total + price * quantity
     @title = title
     @items = @items.fill(@title, @items.size, quantity)
