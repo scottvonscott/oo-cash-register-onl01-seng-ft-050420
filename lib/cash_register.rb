@@ -42,6 +42,7 @@ class CashRegister
     last_item = @line_items.join().to_f
     @total = @total - last_item
     @line_qty
+    binding.pry
   end
 
 
