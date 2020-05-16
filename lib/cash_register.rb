@@ -13,9 +13,9 @@ class CashRegister
     line_qty = []
     @line_qty = line_qty
     @line_qty << quantity
-    line_items = []
-    @line_items = line_items
-    @line_items << price
+    line_price = []
+    @line_price = line_items
+    @line_price << price
     @total = @total + price * quantity
     @title = title
     @items = @items.fill(@title, @items.size, quantity)
@@ -39,10 +39,10 @@ class CashRegister
    end
 
   def void_last_transaction
-    last_item = @line_items.join().to_f
+    last_price = @line_price.join().to_f
+    last_qty = @line_qty.join().to_f
+    last_item = last_qty * last_price
     @total = @total - last_item
-    @line_qty
-    binding.pry
   end
 
 
