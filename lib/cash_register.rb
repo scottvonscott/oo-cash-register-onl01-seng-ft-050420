@@ -38,7 +38,7 @@ class CashRegister
   def void_last_transaction
     @items.delete(-1)
     @total = @total - line_items[-1]
-
+    binding.pry
   end
 
 
